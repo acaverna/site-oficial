@@ -1,129 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Caverna</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/951160809d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <span>a caverna</span>
+    <nav class="nav-menu">
+        <h3 class="title-menu">a caverna</h3>
 
-            <ul>
-                <li>
-                    <a href="#">HOME</a>
-                </li>
-                <li>
-                    <a href="#">SOBRE</a>
-                </li>
-                <li>
-                    <a href="#">PROJETOS</a>
-                </li>
-                <li>
-                    <a href="#">CONTATO</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
+        <ul class="ul-menu">
+            <li>
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">SOBRE</a>
+            </li>
+            <li>
+                <a href="#">PROJETOS</a>
+            </li>
+            <li>
+                <a href="#">CONTATO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="img-patocornio">
             <img src="./assets/img/Patocornio.png">
         </div>
-        <div>
-            <h1>A Caverna do Patocornio, </h1>
-            <h3>Uma comunidade, uma familia... uma GALACTEA! A seita que doi menos.</h3>
+        <div class="div-info">
+            <h1 class="title">Caverna do patocónio</h1>
+            <h3 class="description">Uma comunidade para patocornlovers</h3>
 
-            <div>
-                <a href="#">
-                    <img src="./assets/img/Twitter.png" alt="img_twitter">
+            <div class="div-links">
+                <a href="https://twitter.com/ac4verna" class="icon-link">
+                    <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#">
-                    <img src="./assets/img/Facebook.png" alt="img_facebook">
+                <a href="https://dev.to/acaverna" class="icon-link">
+                    <i class="fab fa-dev"></i>
                 </a>
-                <a href="#">
-                    <img src="./assets/img/youtube.png" alt="img_youtube">
+                <a href="#" class="icon-link" class="icon-link">
+                    <i class="fab fa-youtube"></i>
                 </a>
-                <a href="#">
-                    <img src="./assets/img/github.png" alt="img_github">
+                <a href="https://github.com/acaverna" class="icon-link">
+                    <i class="fab fa-github"></i>
                 </a>
             </div>
         </div>
     </header>
 
     <main>
-        <h2>Quem somos?</h2>
+        <section class="section-about">
+            <h2 class="title-section">Quem somos?</h2>
 
-        <section>
-            Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds
-            vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds vidis litro abertis.
-            Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros
-            commodo tempor. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum
-            Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds vidis
-            litro abertis. Mauris nec dolor in eros commodo tempor.
+            <p class="text-about">
+                Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum Ipsum,
+                cacilds
+                vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds vidis litro abertis.
+                Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in
+                eros
+                commodo tempor. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+                Mussum
+                Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds vidis
+                litro abertis. Mauris nec dolor in eros commodo tempor.
+            </p>
         </section>
 
-        <h2>Projetos que apoiamos</h2>
-
         <section>
-            <a>
-                <img src="./assets/img/podcasts.png" alt="img_podcast" />
-                <span>Podcast</span>
-            </a>
-            <a>
-                <img src="./assets/img/artigos.png" alt="img_artigos" />
-                <span>Artigos</span>
-            </a>
-            <a>
-                <img src="./assets/img/grupos.png" alt="img_grupos" />
-                <span>Grupos</span>
-            </a>
-            <a>
-                <img src="./assets/img/cursos.png" alt="img_cursos" />
-                <span>Cursos</span>
-            </a>
+            <h2 class="title-section">Projetos que apoiamos</h2>
+
+            <div class="projects">
+                <a class="icon-project" href="#">
+                    <div>
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <span>Podcast</span>
+                </a>
+                <a class="icon-project" href="#">
+                    <div>
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <span>Artigos</span>
+                </a>
+                <a class="icon-project" href="#">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <span>Grupos</span>
+                </a>
+                <a class="icon-project" href="#">
+                    <div>
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <span>Cursos</span>
+                </a>
+            </div>
         </section>
 
-        <h2>Contato</h2>
         <section>
-            <form action="">
-                <div>
-                    <label for="">Nome</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for="">Email:</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for="">Assunto</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for="">Mensagem</label>
-                    <input type="text" name="" id="">
-                </div>
+            <h2 class="title-section">Contato</h2>
 
-                <button>Enviar</button>
+            <form action="" class="form-contact">
+                <label for="">Nome:</label>
+                <input type="text" name="" id="">
+
+                <label for="">Email:</label>
+                <input type="text" name="" id="">
+
+                <label for="">Assunto:</label>
+                <input type="text" name="" id="">
+
+                <label for="">Mensagem:</label>
+                <input type="text" name="" id="">
+
+                <button class="button-submit">Enviar</button>
             </form>
-            <section>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</p>
 
-                <h3>Visite nossas redes sociais</h3>
+            <section>
+                <p class="text-contact">Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</p>
+
+                <h3 class="social">Visite nossas redes sociais</h3>
 
                 <div>
-                    <a href="https://twitter.com/ac4verna">
-                        <img src="./assets/img/Twitter.png" alt="img_twitter">
+                    <a href="https://twitter.com/ac4verna" class="icon-contact">
+                        <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#">
-                        <img src="./assets/img/Facebook.png" alt="img_facebook">
+                    <a href="https://dev.to/acaverna" class="icon-contact">
+                        <i class="fab fa-dev"></i>
                     </a>
-                    <a href="#">
-                        <img src="./assets/img/youtube.png" alt="img_youtube">
+                    <a href="#" class="icon-contact">
+                        <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="#">
-                        <img src="./assets/img/github.png" alt="img_github">
+                    <a href="https://github.com/acaverna" class="icon-contact">
+                        <i class="fab fa-github"></i>
                     </a>
                 </div>
 
@@ -134,7 +149,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>
             Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
         </p>
