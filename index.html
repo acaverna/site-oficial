@@ -32,6 +32,21 @@
       </li>
     </ul>
   </nav>
+  <div class="mobile-container">
+    <div class="topnav">
+      <h3 class="title-menu-hamburguer">a caverna</h3>
+      
+      <div style="display:none" id="allLinks">
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Projetos</a>
+        <a href="#">Redes</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    </div>
 
   <header class="header">
     <div class="img-patocornio">
@@ -153,7 +168,43 @@
         </ul>
       </div>
     </section>
+    <section id="sociais">
+      <p class="text-contact">Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</p>
 
+      <h3 class="social">Visite nossas redes sociais</h3>
+
+      <div>
+        <a href="https://twitter.com/ac4verna" class="icon-contact">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://dev.to/acaverna" class="icon-contact">
+          <i class="fab fa-dev"></i>
+        </a>
+        <a href="#" class="icon-contact">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://github.com/acaverna" class="icon-contact">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <a hres="https://discord.io/carverna">
+        <img src="./assets/img/discord.png" alt="img_dicord">
+      </a>
+    </section>
+    </section>
+    <section id="contate-nos">
+      <h2 class="title-section">Contato</h2>
+      <form id="formulario" autocomplete="off" action="/">
+        <fieldset>
+          <label>Nome:</label><input class="campo_nome" type="text"><br>
+          <label>Email:</label><input class="campo_email" type="password"><br>
+          <label>Assunto:</label><input class="campo_assunto" type="subject"><br>
+          <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
+          <input class="btn_submit" type="submit" value="Enviar">
+        </fieldset>
+
+      </form>
     <section class="sociais__container" id="sociais">
       <h1>Contato</h1>
       <div class="row">
@@ -202,6 +253,7 @@
           </a>
         </section>
       </div>
+
     </section>
   </main>
 
@@ -211,7 +263,19 @@
     </p>
   </footer>
 
+  <script>
+    function openMenu() {
+      var x = document.getElementById("allLinks");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
   <script src="./assets/javascript/index.js"></script>
+
 </body>
 
 </html>
