@@ -2,6 +2,12 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* Default textarea */
+
+textarea{
+    resize: vertical;
+}
+
 .title-section {
     font-weight: bold;
     font-size: 40px;
@@ -160,6 +166,82 @@ body {
     cursor: pointer;
 }
 
+/* Contact and social */
+
+.sociais__container{
+    padding: 32px 0;
+    background-color: #FCF9F2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sociais__container h1 {
+    margin-bottom: 32px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4560F8;
+    font-size: 48px;
+    line-height: 21px;
+}
+
+.sociais__container .row{
+    display: flex;
+    justify-content: space-around;
+}
+.sociais__container .row .sociais__section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sociais__container .row .contato__form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sociais__container .row .contato__form .submit__button {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    width: 80%;
+    cursor: pointer;
+    padding: 13px;
+    margin: 0 auto;
+    background-color: #4560F8;
+    border: none;
+    outline: none;
+}
+.sociais__container .row .contato__form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+}
+
+.sociais__container .row .contato__form div label{
+    margin-bottom: 13px;
+    color: #767575;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.sociais__container .row .contato__form div textarea {
+    height: 230px;
+}
+
+.sociais__container .row .contato__form div input, .sociais__container .row .contato__form div textarea {
+    padding: 13px;
+    outline: none;
+    border: 1px solid #cfcecd;
+    border-radius: 8px;
+    width: 100%;
+}
+
 /* Text Contact */
 
 .text-contact {
@@ -167,20 +249,53 @@ body {
     line-height: 28px;
     text-transform: capitalize;
     color: #000;
+    margin-bottom: 23px;
 }
 
 .social {
     font-weight: 500;
-    font-size: 36px;
+    margin-bottom: 23px;
+    font-weight: bold;
+    font-size: 3rem;
     line-height: 42px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: #C08509;
+}
+
+.sociais__section div{
+    margin-bottom: 52px;
 }
 
 .icon-contact {
     color: #C08509;
+    margin-bottom: 23px;
     font-size: 60px;
     text-decoration: none;
+    transition: 1s;
+}
+
+.fa-github, .fa-dev, .fa-youtube, .fa-twitter{
+    transition: 0.3s;
+}
+
+.icon-contact .fa-github:hover{
+    color: #000;
+}
+
+.icon-contact .fa-youtube:hover{
+    color: #FF0000;
+}
+
+.icon-contact .fa-dev:hover{
+    color: #000;
+}
+
+.icon-contact .fa-twitter:hover{
+    color: #00ACEE;
+}
+
+.icon-contact + .icon-contact {
+    margin-left: 32px;
 }
 
 /* Footer */
