@@ -16,7 +16,6 @@
 <body>
   <nav class="nav-menu">
     <h3 class="title-menu">a caverna</h3>
-
     <ul class="ul-menu">
       <li>
         <a href="#">HOME</a>
@@ -28,7 +27,7 @@
         <a href="#">PROJETOS</a>
       </li>
       <li>
-        <a href="#">CONTATO</a>
+        <a href="#">REDES</a>
       </li>
     </ul>
   </nav>
@@ -59,7 +58,7 @@
   </header>
 
   <main>
-    <section class="section-about">
+    <section id="sobre" class="section-about">
       <h2 class="title-section">Quem somos?</h2>
 
       <p class="text-about">
@@ -75,7 +74,7 @@
       </p>
     </section>
 
-    <section>
+    <section id="projetos">
       <h2 class="title-section">Projetos que apoiamos</h2>
 
       <div class="projects">
@@ -106,49 +105,53 @@
       </div>
     </section>
 
-    <section>
-      <h2 class="title-section">Contato</h2>
-
-      <form action="" class="form-contact">
-        <label for="">Nome:</label>
-        <input type="text" name="" id="">
-
-        <label for="">Email:</label>
-        <input type="text" name="" id="">
-
-        <label for="">Assunto:</label>
-        <input type="text" name="" id="">
-
-        <label for="">Mensagem:</label>
-        <input type="text" name="" id="">
-
-        <button class="button-submit">Enviar</button>
-      </form>
-
-      <section>
-        <p class="text-contact">Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</p>
-
-        <h3 class="social">Visite nossas redes sociais</h3>
-
-        <div>
-          <a href="https://twitter.com/ac4verna" class="icon-contact">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://dev.to/acaverna" class="icon-contact">
-            <i class="fab fa-dev"></i>
-          </a>
-          <a href="#" class="icon-contact">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="https://github.com/acaverna" class="icon-contact">
-            <i class="fab fa-github"></i>
-          </a>
+    <section class="sociais__container">
+        <h1>Contato</h1>
+        <div class="row">
+          <form class="contato__form">
+            <div>
+              <label for="name">Nome:</label>
+              <input id="name"/>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input id="email"/>
+            </div>
+            <div>
+              <label for="subject">Assunto:</label>
+              <input id="subject"/>
+            </div>
+            <div>
+              <label for="message">Mensagem:</label>
+              <textarea id="message"></textarea>
+            </div>
+            <button type="submit" class="submit__button">Enviar!</button>
+          </form>
+          <section class="sociais__section">
+            <p class="text-contact">Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</p>
+    
+            <h3 class="social">Visite nossas redes sociais</h3>
+    
+            <div>
+              <a href="https://twitter.com/ac4verna" class="icon-contact">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://dev.to/acaverna" class="icon-contact">
+                <i class="fab fa-dev"></i>
+              </a>
+              <a href="#" class="icon-contact">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://github.com/acaverna" class="icon-contact">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+    
+            <a href="https://discord.io/carverna">
+              <img src="./assets/img/discord.png" alt="img_dicord">
+            </a>
+          </section>
         </div>
-
-        <a hres="https://discord.io/carverna">
-          <img src="./assets/img/discord.png" alt="img_dicord">
-        </a>
-      </section>
     </section>
   </main>
 
