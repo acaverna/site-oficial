@@ -4,7 +4,7 @@ body {
 
 /* Default textarea */
 
-textarea{
+textarea {
     resize: vertical;
 }
 
@@ -106,7 +106,7 @@ textarea{
 
 .projects {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 90px;
 }
 
@@ -135,6 +135,52 @@ textarea{
 
 .icon-project span {
     padding-top: 15px;
+}
+
+.links-projetos {
+    margin: 30px 90px 120px 90px;
+    padding: 30px;
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #4560F8;
+    border-radius: 10px;
+    font-weight: bold;
+    display: none;
+}
+
+.titulo-links-projetos {
+    color: #4560F8;
+    font-size: 45px;
+}
+
+.lista-links-projetos {
+    margin: 25px auto;
+    width: 400px;
+}
+
+.item-link-projetos {
+    padding: 10px;
+    background-color: #fbeecf;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.item-link-projetos:hover {
+    cursor: pointer;
+    background-color: #ffe6ab;
+}
+
+.link-projeto {
+    text-decoration: none;
+}
+
+.link-projeto.caverna {
+    font-size: 32px;
 }
 
 /* Form contact */
@@ -169,7 +215,7 @@ textarea{
 
 /* Contact and social */
 
-.sociais__container{
+.sociais__container {
     padding: 32px 0;
     background-color: #FCF9F2;
     display: flex;
@@ -187,17 +233,18 @@ textarea{
     line-height: 21px;
 }
 
-.sociais__container .row{
+.sociais__container .row {
     display: flex;
     justify-content: space-around;
 }
-.sociais__container .row .sociais__section{
+
+.sociais__container .row .sociais__section {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.sociais__container .row .contato__form{
+.sociais__container .row .contato__form {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -217,13 +264,14 @@ textarea{
     border: none;
     outline: none;
 }
-.sociais__container .row .contato__form div{
+
+.sociais__container .row .contato__form div {
     display: flex;
     flex-direction: column;
     margin-bottom: 23px;
 }
 
-.sociais__container .row .contato__form div label{
+.sociais__container .row .contato__form div label {
     margin-bottom: 13px;
     color: #767575;
     font-weight: bold;
@@ -235,7 +283,8 @@ textarea{
     height: 230px;
 }
 
-.sociais__container .row .contato__form div input, .sociais__container .row .contato__form div textarea {
+.sociais__container .row .contato__form div input,
+.sociais__container .row .contato__form div textarea {
     padding: 13px;
     outline: none;
     border: 1px solid #cfcecd;
@@ -263,7 +312,7 @@ textarea{
     color: #C08509;
 }
 
-.sociais__section div{
+.sociais__section div {
     margin-bottom: 52px;
 }
 
@@ -275,27 +324,30 @@ textarea{
     transition: 1s;
 }
 
-.fa-github, .fa-dev, .fa-youtube, .fa-twitter{
+.fa-github,
+.fa-dev,
+.fa-youtube,
+.fa-twitter {
     transition: 0.3s;
 }
 
-.icon-contact .fa-github:hover{
+.icon-contact .fa-github:hover {
     color: #000;
 }
 
-.icon-contact .fa-youtube:hover{
+.icon-contact .fa-youtube:hover {
     color: #FF0000;
 }
 
-.icon-contact .fa-dev:hover{
+.icon-contact .fa-dev:hover {
     color: #000;
 }
 
-.icon-contact .fa-twitter:hover{
+.icon-contact .fa-twitter:hover {
     color: #00ACEE;
 }
 
-.icon-contact + .icon-contact {
+.icon-contact+.icon-contact {
     margin-left: 32px;
 }
 
