@@ -1,281 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Caverna</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/951160809d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>A Caverna</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/951160809d.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <nav class="nav-menu">
-    <h3 class="title-menu">a caverna</h3>
-    <ul class="ul-menu">
-      <li>
-        <a href="#">HOME</a>
-      </li>
-      <li>
-        <a href="#sobre">SOBRE</a>
-      </li>
-      <li>
-        <a href="#projetos">PROJETOS</a>
-      </li>
-      <li>
-        <a href="#sociais">REDES</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="mobile-container">
-    <div class="topnav">
-      <h3 class="title-menu-hamburguer">a caverna</h3>
-      
-      <div style="display:none" id="allLinks">
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Projetos</a>
-        <a href="#">Redes</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    </div>
-
-  <header class="header">
-    <div class="img-patocornio">
-      <img src="./assets/img/Patocornio.png">
-    </div>
-    <div class="div-info">
-      <h1 class="title">Caverna do patocórnio</h1>
-      <h3 class="description">Uma comunidade para patocornlovers</h3>
-
-      <div class="div-links">
-        <a href="https://twitter.com/ac4verna" class="icon-link">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://dev.to/acaverna" class="icon-link">
-          <i class="fab fa-dev"></i>
-        </a>
-        <a href="#" class="icon-link" class="icon-link">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://github.com/acaverna" class="icon-link">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section id="sobre" class="section-about">
-      <h2 class="title-section">Quem somos?</h2>
-
-      <p class="text-about">
-        Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum Ipsum,
-        cacilds
-        vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds vidis litro abertis.
-        Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in
-        eros
-        commodo tempor. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
-        Mussum
-        Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Mussum Ipsum, cacilds vidis
-        litro abertis. Mauris nec dolor in eros commodo tempor.
-      </p>
-    </section>
-
+    <nav>
+        <h1 class="logo">A Caverna</h1>
+        <div>
+            <a href="#">Inicio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+        </div>
+    </nav>
+    <header id="sobre">
+        <img src="./assets/img/patocornio.png" alt="Imagem do patocórnio segurando uma faca">
+        <div>
+            <h1>Caverna do patocórnio</h1>
+            <h2>Uma comunidade para patocórnio-lovers</h2>
+            <p>A Caverna é uma comunidade de pessoas desenvolvedoras de todos os níveis e das mais variadas especializacões.</p>
+            <div class="social">
+                <a href="https://github.com/acaverna" class="icon-link fab fa-github" target="_blank"></a>
+                <a href="https://discord.gg/MMyPWTgBcQ" class="icon-link fab fa-discord" target="_blank"></a>
+                <a href="https://twitter.com/ac4verna" class="icon-link fab fa-twitter" target="_blank"></a>
+                <a href="https://dev.to/acaverna" class="icon-link fab fa-dev" target="_blank"></a>
+            </div>
+        </div>
+    </header>
     <section id="projetos">
-      <h2 class="title-section">Projetos que apoiamos</h2>
-
-      <div class="projects">
-        <a class="icon-project icon-podcasts" href="#">
-          <div>
+        <h1>Projetos que apoiamos</h1>
+        <h2>
             <i class="fas fa-microphone-alt"></i>
-          </div>
-          <span>Podcast</span>
-        </a>
-        <a class="icon-project icon-artigos" href="#">
-          <div>
-            <i class="fas fa-file-alt"></i>
-          </div>
-          <span>Artigos</span>
-        </a>
-        <a class="icon-project icon-comunidades" href="#">
-          <div>
-            <i class="fas fa-user-friends"></i>
-          </div>
-          <span>Comunidades</span>
-        </a>
-      </div>
-
-      <div class="artigos links-projetos">
-        <h4 class="titulo-links-projetos">Artigos</h4>
-
-        <ul class="lista-links-projetos">
-          <li class="item-link-projetos">
-            <a href="https://dev.to/acaverna" class="link-projeto" target="_blank">A caverna</a>
-          </li>
-          <li class="item-link-projetos">
-            <a href="https://dev.to/feministech" class="link-projeto" target="_blank">Feministech</a>
-          </li>
-          <li class="item-link-projetos">
-            <a href="https://dev.to/kotlinautas" class="link-projeto" target="_blank">Kotlinautas</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="podcasts links-projetos">
-        <h4 class="titulo-links-projetos">Podcast</h4>
-
-        <ul class="lista-links-projetos">
-          <li class="item-link-projetos">
+            <span>| Podcast</span>
+        </h2>
+        <div class="projects">
             <a href="https://anchor.fm/mlkda-da-deepweb" class="link-projeto" target="_blank">MLKDA da DeepWeb</a>
-          </li>
-          <li class="item-link-projetos">
             <a href="https://anchor.fm/feministech" class="link-projeto" target="_blank">Feministech</a>
-          </li>
-          <li class="item-link-projetos">
             <a href="https://anchor.fm/mocasdaweb" class="link-projeto" target="_blank">Moças da Web</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="comunidades links-projetos">
-        <h4 class="titulo-links-projetos">Comunidades</h4>
-
-        <ul class="lista-links-projetos">
-          <li class="item-link-projetos">
-            <a href="https://caverna.live/discord" class="link-projeto caverna" target="_blank">Caverna do
-              Patocórnio</a>
-          </li>
-          <li class="item-link-projetos">
-            <a href="https://github.com/feministech/codigo-de-conduta" class="link-projeto"
-              target="_blank">Feministech</a>
-          </li>
-          <li class="item-link-projetos">
-            <a href="https://github.com/kotlinautas/codigo-de-conduta" class="link-projeto"
-              target="_blank">Kotlinautas</a>
-          </li>
-          <li class="item-link-projetos">
+        </div>
+        <h2>
+            <i class="fas fa-file-alt"></i>
+            <span>| Artigos</span>
+        </h2>
+        <div class="projects">
+            <a href="https://dev.to/acaverna" class="link-projeto" target="_blank">A caverna</a>
+            <a href="https://dev.to/feministech" class="link-projeto" target="_blank">Feministech</a>
+            <a href="https://dev.to/kotlinautas" class="link-projeto" target="_blank">Kotlinautas</a>
+        </div>
+        <h2>
+            <i class="fas fa-user-friends"></i>
+            <span>| Comunidades</span>
+        </h2>
+        <div class="projects">
+            <a href="https://discord.io/carverna" class="link-projeto caverna" target="_blank">Caverna do Patocórnio</a>
+            <a href="https://github.com/feministech/codigo-de-conduta" class="link-projeto" target="_blank">Feministech</a>
+            <a href="https://github.com/kotlinautas/codigo-de-conduta" class="link-projeto" target="_blank">Kotlinautas</a>
             <a href="http://mais1code.com.br/" class="link-projeto" target="_blank">+1 Code</a>
-          </li>
-        </ul>
-      </div>
+        </div>
     </section>
-    <section id="sociais">
-      <p class="text-contact">Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</p>
-
-      <h3 class="social">Visite nossas redes sociais</h3>
-
-      <div>
-        <a href="https://twitter.com/ac4verna" class="icon-contact">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://dev.to/acaverna" class="icon-contact">
-          <i class="fab fa-dev"></i>
-        </a>
-        <a href="#" class="icon-contact">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://github.com/acaverna" class="icon-contact">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-
-      <a hres="https://discord.io/carverna">
-        <img src="./assets/img/discord.png" alt="img_dicord">
-      </a>
-    </section>
-    </section>
-    <section id="contate-nos">
-      <h2 class="title-section">Contato</h2>
-      <form id="formulario" autocomplete="off" action="/">
-        <fieldset>
-          <label>Nome:</label><input class="campo_nome" type="text"><br>
-          <label>Email:</label><input class="campo_email" type="password"><br>
-          <label>Assunto:</label><input class="campo_assunto" type="subject"><br>
-          <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
-          <input class="btn_submit" type="submit" value="Enviar">
-        </fieldset>
-
-      </form>
-    <section class="sociais__container" id="sociais">
-      <h1>Contato</h1>
-      <div class="row">
-        <form class="contato__form">
-          <div>
-            <label for="name">Nome:</label>
-            <input id="name" />
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <input id="email" />
-          </div>
-          <div>
-            <label for="subject">Assunto:</label>
-            <input id="subject" />
-          </div>
-          <div>
-            <label for="message">Mensagem:</label>
-            <textarea id="message"></textarea>
-          </div>
-          <button type="submit" class="submit__button">Enviar!</button>
-        </form>
-        <section class="sociais__section">
-          <p class="text-contact">Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
-          </p>
-
-          <h3 class="social">Visite nossas redes sociais</h3>
-
-          <div>
-            <a href="https://twitter.com/ac4verna" class="icon-contact">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://dev.to/acaverna" class="icon-contact">
-              <i class="fab fa-dev"></i>
-            </a>
-            <a href="#" class="icon-contact">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://github.com/acaverna" class="icon-contact">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-
-          <a href="https://discord.io/carverna">
-            <img src="./assets/img/discord.png" alt="img_dicord">
-          </a>
-        </section>
-      </div>
-
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>
-      Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
-    </p>
-  </footer>
-
-  <script>
-    function openMenu() {
-      var x = document.getElementById("allLinks");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  </script>
-
-  <script src="./assets/javascript/index.js"></script>
-
+    <footer>
+        <strong>Feito com 🤍 e ☕ pela <a href="https://github.com/acaverna">comunidade</a>.</strong>
+        <div class="social">
+            <a href="https://github.com/acaverna" class="icon-link fab fa-github" target="_blank"></a>
+            <a href="https://discord.gg/MMyPWTgBcQ" class="icon-link fab fa-discord" target="_blank"></a>
+            <a href="https://twitter.com/ac4verna" class="icon-link fab fa-twitter" target="_blank"></a>
+            <a href="https://dev.to/acaverna" class="icon-link fab fa-dev" target="_blank"></a>
+        </div>
+    </footer>
 </body>
-
 </html>
