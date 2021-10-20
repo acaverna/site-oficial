@@ -1,7 +1,8 @@
 :root {
-    --purple: #240046;
-    --light-purple: #5a189a;
-    --blue: #4560f8;
+    --purple: #6C5AA0;
+    --orange: #DAA026;
+    --pink: #bf47a7;
+    --blue: #4661fa;
     --black: #151515;
     --white: #fff;
 }
@@ -82,7 +83,7 @@ header p {
 
 .icon-link {
     text-decoration: none;
-    background-color: var(--light-purple);
+    background-color: var(--orange);
     color: var(--white);
     padding: 15px;
     border-radius: 10px;
@@ -109,7 +110,7 @@ section {
 
 .projects a {
     text-decoration: none;
-    background-color: var(--light-purple);
+    background-color: var(--pink);
     color: var(--white);
     padding: 15px;
     border-radius: 10px;
@@ -143,4 +144,8 @@ footer div a {
 
 footer div a:hover {
     text-decoration: underline;
+}
+
+.dark-title {
+    color: var(--black);
 }
