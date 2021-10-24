@@ -25,7 +25,7 @@ body {
 a {
     font-weight: bold;
     color: var(--white);
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -33,6 +33,10 @@ a {
 a:hover {
     text-decoration: underline;
     opacity: 0.8;
+}
+
+.social a{
+    font-size: 20px;
 }
 
 /* Navigation */
