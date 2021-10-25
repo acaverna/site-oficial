@@ -25,7 +25,7 @@ body {
 a {
     font-weight: bold;
     color: var(--white);
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -35,12 +35,17 @@ a:hover {
     opacity: 0.8;
 }
 
+.social a{
+    font-size: 20px;
+}
+
 /* Navigation */
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 15px 200px;
+    flex-wrap: wrap;
+    padding: 0.3% 10%;
     align-items: center;
     color: #fff;
 }
@@ -57,29 +62,40 @@ nav div a {
     padding-right: 15px;
 }
 
+@media (max-width:650px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    } 
+}
+
 /* Hero */
 
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 200px;
+    padding: 5% 10%;
 }
 
+
 header img {
-    width: 128px;
+    max-width: 20%;
+    min-width: 130px;
 }
 
 h1 {
     font-weight: bold;
     font-size: 40px;
-    line-height: 21px;
+    line-height: 40px;
+    margin: 15px 0;
     color: var(--blue);
 }
 
-header p {
-    max-width: 50%;
-}
+ .sobre p{
+    max-width: 70%;
+} 
+
 
 .icon-link {
     text-decoration: none;
@@ -99,13 +115,14 @@ header p {
 section {
     display: flex;
     flex-direction: column;
-    padding: 40px 200px;
+    padding: 40px 10%;
     background-color: var(--purple);
 }
 
 .projects {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .projects a {
@@ -114,15 +131,17 @@ section {
     color: var(--white);
     padding: 15px;
     border-radius: 10px;
-    margin: 0 15px 0 0;
+    margin: 0 15px 15px 0;
 }
 
 /* Footer */
 
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 40px 200px;
+    flex-wrap: wrap;
+     justify-content:
+     space-around; 
+      padding: 20px 10%;
     align-items: center;
     background-color: var(--black);
     color: #fff;
@@ -146,6 +165,10 @@ footer div a:hover {
     text-decoration: underline;
 }
 
+.feitoCom{
+    align-items: center;
+    padding: 10px;
+}
 .dark-title {
     color: var(--black);
 }
