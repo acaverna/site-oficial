@@ -7,6 +7,12 @@
     --white: #fff;
 }
 
+/* Basic Css page reset. */
+
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -20,6 +26,11 @@ body {
     background-color: var(--black);
     color: var(--white);
     font-size: 16px;
+    transition: background 0.19s ease-in-out;
+}
+
+body.light {
+    background-color: var(--white);
 }
 
 a {
@@ -37,6 +48,10 @@ a:hover {
 
 .social a{
     font-size: 20px;
+}
+
+.navegacaoInterna.light a {
+    color: #000;
 }
 
 /* Navigation */
@@ -62,6 +77,48 @@ nav div a {
     padding-right: 15px;
 }
 
+/* Toogle Mode */
+
+nav div.toogle-mode .checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+nav div.toogle-mode .label {
+    width: 50px;
+    height: 26px;
+    background-color: #111;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px;
+}
+
+nav div.toogle-mode .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+nav div.toogle-mode .fa-moon {
+    color:#f1c40f;
+}
+
+nav div.toogle-mode .fa-sun {
+    color:#f39c12;
+}
+
+nav div.toogle-mode .ball {
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 22px;
+    position: absolute;
+    width: 22px;
+    transition: transform 0.19s linear;
+}
+
 @media (max-width:650px) {
     nav {
         flex-direction: column;
@@ -78,6 +135,9 @@ header {
     padding: 5% 10%;
 }
 
+header.light {
+    color: #000;
+}
 
 header img {
     max-width: 20%;
@@ -125,6 +185,10 @@ section {
     flex-wrap: wrap;
 }
 
+h1.light-title{
+    color: var(--white);
+}
+
 .projects a {
     text-decoration: none;
     background-color: var(--pink);
@@ -145,6 +209,14 @@ footer {
     align-items: center;
     background-color: var(--black);
     color: #fff;
+}
+
+footer.light {
+    background-color: #fff;
+    color: #000;
+}
+footer.light strong a{
+    color: #000;
 }
 
 footer div {
@@ -169,6 +241,7 @@ footer div a:hover {
     align-items: center;
     padding: 10px;
 }
+
 .dark-title {
     color: var(--black);
 }
