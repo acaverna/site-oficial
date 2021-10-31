@@ -52,6 +52,7 @@ a:hover {
 
 .navegacaoInterna.light a {
     color: #000;
+    transition: color 0.19s ease-in-out;
 }
 
 /* Navigation */
@@ -137,6 +138,7 @@ header {
 
 header.light {
     color: #000;
+    transition: color 0.19s ease-in-out;
 }
 
 header img {
@@ -187,6 +189,7 @@ section {
 
 h1.light-title{
     color: var(--white);
+    transition: color 0.19s ease-in-out;
 }
 
 .projects a {
@@ -207,16 +210,16 @@ footer {
      space-around; 
       padding: 20px 10%;
     align-items: center;
-    background-color: var(--black);
     color: #fff;
 }
 
 footer.light {
-    background-color: #fff;
     color: #000;
+    transition: color 0.19s ease-in-out;
 }
 footer.light strong a{
     color: #000;
+    transition: color 0.19s ease-in-out;
 }
 
 footer div {
